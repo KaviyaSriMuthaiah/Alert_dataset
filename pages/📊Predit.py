@@ -18,7 +18,7 @@ col1,col2=st.columns([6,6])
 
 @st.cache_data
 def load_data():
-    df=pd.read_csv("D:\VS Code\Pandas\Streamlit\Preprocess_data.csv")
+    df=pd.read_csv("Alert_dataset/Preprocess_data.csv")
     return df
 
 df=load_data()
@@ -40,7 +40,7 @@ st.markdown("""___""")
 @st.cache_resource(show_spinner="Loadig model...")
 def load_model():
     # Load the model from the pkl file
-    with open('D:\VS Code\Pandas\Streamlit\model (4).pkl', 'rb') as file:
+    with open('pages/model (4).pkl', 'rb') as file:
         loaded_model = pickle.load(file)
         return loaded_model
 model=load_model()
