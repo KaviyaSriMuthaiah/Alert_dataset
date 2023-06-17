@@ -23,7 +23,7 @@ with st.sidebar:
 
 @st.cache_data(show_spinner="loading...")
 def load_data():
-    df=pd.read_csv("D:\VS Code\Pandas\Streamlit\Preprocess_data.csv")
+    df=pd.read_csv("Preprocess_data.csv")
     df=df.drop(columns='Unnamed: 0')
     return df 
 
