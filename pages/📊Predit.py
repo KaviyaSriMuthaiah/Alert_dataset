@@ -18,7 +18,7 @@ col1,col2=st.columns([6,6])
 
 @st.cache_data
 def load_data():
-    df=pd.read_csv("Alert_dataset/Preprocess_data.csv")
+    df=pd.read_csv("pages/Preprocess_data.csv")
     return df
 
 df=load_data()
